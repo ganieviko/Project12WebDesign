@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Application Form</title>
+    <h1><img src="techno study logo.png" alt="logo" class="logo"></h1>
+    <h2 class="blue-text">Application Form</h2>
+    <hr width="100%" color="lightgreen" align="center" size="6">
+    <hr width="70%" color="lightgreen" align="center" size="4">
+    <hr width="40%" color="lightgreen" align="center" size="2">
+</head>
+<style>
+  .logo {
+  width: 190px;
+  height: 90px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  h2.blue-text{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  background-color: lightgreen
+  }
+  .firstcolum{display:width:100%; color:black; required;}
+  .secondcolum{display:width:97%; color:black; margin-left: 10%; required;}
+  .thirdcolum{display:width:97%; color:black; margin-left: 10%; required;
+  }
+
+  .apply{
+  background-color:#63D125;
+  border-color:black;
+  text-align: center;
+  padding: 15px 20px;
+
+
+</style>
+<body bgcolor="lightyellow">
+<div class="information" >
+    <form action="Page3SubmissionConfirm.html" >
+        <br>
+        <label class="firstcolum"> First Name: <input type="text" name="First name" required></label>
+        <label class="secondcolum"> Last Name: <input type="text" name="Last name" required></label><br><br>
+        <label style="" class="firstcolum">Address 1: <input type="text" name="Address 1" required></label>
+        <label class="secondcolum"> Address 2: <input type="text" name="Address 2" required></label><br><br>
+        <label style="margin-left: 2%;" class="firstcolum">City: <input type="text" name="City" required></label>
+        <label class="secondcolum">Zip Code: <input type="number" name="Zip Code" required></label>
+        <label class="thirdcolum">State: <input type="text" name="State" required></label><br><br>
+        <label class="firstcolum"> Date of Birth:  <input type="date" name="dob" required></label>
+        <label style="margin-left: %" class="secondcolum">Phone:<input type="number" name="phone" required> </label>
+        <label style="margin-left: %" class="thirdcolum"> E-mail: <input type="email" name="E-mail" required></label>
+    </form>
+</div>
+<br>
+<div class="Gender">
+    <form action="">Gender:
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Prefer not to say
+    </form>
+</div>
+<br>
+<p>Briefly tell about yourself:</p>
+<label> <textarea rows="5" cols="80" name="text" required></textarea></label>
+<br>
+<p>Which branch do you apply for?<br>
+    Please select only one state:</p>
+<div class="custom-state" style="width:200px;">
+    <select>
+        <option value="0">Select State:</option>
+        <option value="1">New York</option>
+        <option value="2">New Jersey</option>
+        <option value="3">Washington</option>
+        <option value="4">Kentucky</option>
+        <option value="5">Florida</option>
+    </select>
+</div>
+<div class="customer checkboxes">
+    <label class="container"><input type="checkbox">I am willing to relocate.</label><br>
+    <label class="container"><input type="checkbox">I am over 18 years old.</label><br>
+    <label class="container"><input type="checkbox">I have work authorization for the US.</label><br>
+    <label class="container"><input type="checkbox">I am a protected veteran.</label><br>
+    <label class="container"><input type="checkbox">I consider myself as a disabled person.</label><br>
+
+</div>
+<br>
+<div class="customer confirmation">
+    <label class="container" ><input type="checkbox" required><b>I have read the terms and conditions of Techno Study and accept them all.</b></label><br>
+</div>
+
+<a href="mailto:hr@techno.study"><p align="middle"><b>E-mail us your resume and related documents.</b></p></a>
+
+<div style="background-color:lightgreen; text-align:center;">
+    <br>
+    <a href="Page3SubmissionConfirm.html" target="_blank">
+        <button class="apply" type="submit"><b>SUBMIT</b></button>
+    </a>
+</div>
+
+<!--<h1><form action="Page3SubmissionConfirm.html" target="_blank">
+    <button class="button" input type="submit"><b>SUBMIT</b></button>
+</form><hr width="100%" color="lightgreen" align="center" size="1"></h1>
+-->
+</body>
+</html>
